@@ -1,0 +1,81 @@
+@import "theme.css";
+
+/* =====================
+ *   GLOBAL
+ * =====================
+ */
+* {
+  font-family: "FontAwesome", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 14px;
+  color: @text;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* =====================
+ *   TOOLTIP
+ * =====================
+ */
+tooltip, .tooltip {
+  background: @secondary-bg;
+  padding: 0 10px;
+}
+
+/* ====================
+ *   WAYBAR WINDOW
+ * ====================
+ */
+window#waybar {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ====================
+ *   MODULES (Blue Gradient)
+ * ====================
+ */
+#window,
+#workspaces,
+#clock,
+#network,
+#pulseaudio,
+#tray,
+#custom-power {
+  font-family: "Ubuntu Mono";
+  background: @main-bg;
+  padding: 0 10px;
+  border: 1px solid @border;
+}
+
+#workspaces {
+  padding: 0;
+}
+
+#custom-power {
+  padding-right: 5px;
+}
+
+#tray menu {
+  background-color: @secondary-bg;
+}
+
+/* ====================
+ *   WORKSPACES BUTTONS
+ * ====================
+ */
+#workspaces button {
+  padding: 0 10px;
+  transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+  background: @secondary-bg;
+}
+
+
+
+

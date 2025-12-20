@@ -1,0 +1,9 @@
+@define-color orange  #f07427;
+@define-color white   #ffffff;
+@define-color black   #000000;
+
+@define-color bg            @black;
+@define-color main-bg       alpha(@bg, 0.5);
+@define-color secondary-bg  alpha(@bg, 1);
+@define-color text          @white;
+@define-color border        alpha(@bg, 0.5);

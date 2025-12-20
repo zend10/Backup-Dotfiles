@@ -1,0 +1,76 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    // "position": "bottom",
+    "height": 28,
+    // "width": 1280,
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "reload_style_on_change": false,
+    "margin": 2,
+    "spacing": 0,
+    "modules-left": [
+        "hyprland/workspaces",
+	"hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "tray",
+        "custom/power"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
+	"format": "{:%I:%M %p}"
+    },
+    "network": {
+        "format-wifi": "{essid} {icon}",
+	"format-icons": ["󰤟", "󰤢", "󰤥"],
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+        "format-linked": "VPN ",
+        "format-disconnected": "Disconnected ⚠",
+	"on-click": "nm-connection-editor"
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume}% {icon}",
+        "tooltip-format": "{desc}",
+	"format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+	},
+	"on-click": "pavucontrol"
+    },
+    "custom/power": {
+        "format" : "⏻ ",
+        "tooltip": false,
+	"on-click": "~/.config/waybar/power.sh"
+    }
+}
