@@ -9,5 +9,6 @@ Dotfiles for:
 - Wofi
 - Kitty
 - Fish
+- Mako
 
 I use arch btw.

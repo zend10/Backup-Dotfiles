@@ -1,0 +1,44 @@
+# Mako notification daemon config — orange accent, square corners
+
+font=Noto Sans 14
+width=350
+height=200
+margin=12
+padding=16
+border-size=3
+border-radius=0
+background-color=#f07427ee
+text-color=#ffffffff
+border-color=#1a1a1aff
+progress-color=over #f07427aa
+icon-path=/usr/share/icons/hicolor
+max-icon-size=48
+icons=1
+markup=1
+actions=1
+history=1
+default-timeout=6000
+ignore-timeout=0
+anchor=top-right
+layer=overlay
+
+on-button-left=dismiss
+on-button-middle=none
+on-button-right=dismiss-all
+
+
+[urgency=low]
+background-color=#f07427aa
+border-color=#888888ff
+default-timeout=4000
+
+[urgency=normal]
+background-color=#f07427ee
+border-color=#1a1a1aff
+default-timeout=6000
+
+[urgency=critical]
+background-color=#ff4500ee
+border-color=#1a1a1aff
+text-color=#1a1a1aff
+default-timeout=0
