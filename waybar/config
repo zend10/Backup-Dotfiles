@@ -68,7 +68,7 @@
         "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
         "format-linked": "VPN ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "nm-connection-editor"
+	"on-click": "systemsettings kcm_networkmanagement"
     },
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float
@@ -84,7 +84,7 @@
             "car": "",
             "default": ["󰕿", "󰖀", "󰕾"]
 	},
-	"on-click": "pavucontrol"
+	"on-click": "systemsettings kcm_pulseaudio"
     },
     "custom/power": {
         "format" : "⏻ ",
